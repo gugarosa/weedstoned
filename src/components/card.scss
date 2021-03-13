@@ -1,0 +1,24 @@
+// Variables
+$bg-primary: rgb(50, 94, 60);
+
+.card {
+    border: 1px solid black;
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 56px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: -8px 9px 16px -3px gray;
+    background: $bg-primary;
+}
+
+.card-background {
+    // height: 600px;
+    // background-image: url(https://image.ibb.co/e1XKAS/green_background.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // display: flex;
+    // background-color: #bbb;
+    // z-index: 0;
+}
