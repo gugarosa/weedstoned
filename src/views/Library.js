@@ -2,15 +2,18 @@ import React from "react";
 
 import { Card } from "../components/Card";
 
-import { CARDS } from "../data/cards";
+import { LEAFLY } from "../data/leafly";
 
 // Library
 // Exposes the pre-defined cards and their properties
 export const Library = () => {
+    // Gathers and defines a `strains` object
+    const strains = LEAFLY.strains;
+
     return (
         <>
-            {CARDS.map((card) => (
-                <Card data={card} />
+            {strains.map((strain) => (
+                <Card key={strain.name} data={strain} />
             ))}
         </>
     );

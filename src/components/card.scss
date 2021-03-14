@@ -1,24 +1,80 @@
 // Variables
+$common: #dbdbdb;
 $bg-primary: rgb(50, 94, 60);
+$white: #ffffff;
 
-.card {
-    border: 1px solid black;
-    width: 500px;
-    height: 700px;
-    margin: 0 auto;
-    margin-top: 56px;
-    border-radius: 25px;
-    box-sizing: border-box;
-    box-shadow: -8px 9px 16px -3px gray;
-    background: $bg-primary;
+.pill {
+    background-color: $common;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
 }
 
-.card-background {
-    // height: 600px;
-    // background-image: url(https://image.ibb.co/e1XKAS/green_background.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // display: flex;
-    // background-color: #bbb;
-    // z-index: 0;
+.card {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 360px;
+    border-radius: 2rem;
+    box-shadow: 0px 1rem 1.5rem rgba(black, 0.5);
+}
+
+.card-banner {
+    background-color: $common;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 5rem;
+
+    &-logo {
+        background-color: $white;
+        width: 8rem;
+        height: 8rem;
+        box-shadow: 0 0.5rem 1rem rgba(black, 0.3);
+        border-radius: 50%;
+        transform: translateY(50%);
+        transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        &:hover {
+            transform: translateY(50%) scale(1.15);
+        }
+    }
+}
+
+.card-menu {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.card-body {
+    text-align: center;
+    padding: 0 2.5rem 0.5rem;
+    margin: 0;
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+.card-separator {
+    display: flex;
+    justify-content: center;
+    hr {
+        border: none;
+        height: 2px;
+        background-color: $common;
+        width: 75%;
+    }
+}
+
+.card-footer {
+    text-align: center;
+    padding: 0 2.5rem 0.5rem;
+    margin: 0;
 }
