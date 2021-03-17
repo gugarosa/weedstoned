@@ -2,23 +2,24 @@ import React from "react";
 
 import "./card.scss";
 
-import { CardBackground } from "./CardBackground";
-
 // Card
 // Wraps the card and children components
 export const Card = ({ data }) => {
     return (
         <div className="card">
-            <div className="card-banner">
-                <div className="card-banner-logo"></div>
+            <div className={"card-banner card-banner__" + data.rarity}>
+                <div
+                    className="card-banner-logo"
+                    style={{ backgroundImage: `url(${data.img_url})` }}
+                ></div>
             </div>
             <div className="card-menu">
-                <span class="pill">Hybrid</span>
-                <span class="pill">THC: 20%</span>
+                <span className="badge bg-secondary">{data.type}</span>
+                <span className="badge bg-secondary">THC: {data.thc_level}</span>
             </div>
             <div className="card-body">
-                <h2>Blue Dream</h2>
-                <span>Myrcene</span>
+                <h2>{data.name}</h2>
+                <span>{data.most_common_terpene}</span>
             </div>
             <div className="card-separator">
                 <hr></hr>
@@ -32,7 +33,6 @@ export const Card = ({ data }) => {
                     ipsum lorem ipsum lorem ipsum lorem ipsum
                 </span>
             </div>
-            {/* <CardBackground /> */}
         </div>
     );
 };

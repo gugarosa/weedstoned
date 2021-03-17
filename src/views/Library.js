@@ -12,9 +12,15 @@ export const Library = () => {
 
     return (
         <>
-            {strains.map((strain) => (
-                <Card key={strain.name} data={strain} />
-            ))}
+            <div className="container">
+                <div className="row justify-content-around p-4">
+                    {strains.map((strain) => (
+                        <div className="col-sm-auto" key={strain.name}>
+                            <Card data={strain} />
+                        </div>
+                    ))}
+                </div>
+            </div>
         </>
     );
 };
