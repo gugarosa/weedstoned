@@ -3,10 +3,9 @@ $black: #000000;
 $white: #ffffff;
 
 $common: #dbdbdb;
-$uncommon: #da7171;
-$rare: #a1a1a1;
-$epic: #a1a1a1;
-$legendary: #a1a1a1;
+$rare: #4299f8;
+$epic: #ba49cd;
+$legendary: #ee9d35;
 
 // Classes
 .card {
@@ -24,9 +23,6 @@ $legendary: #a1a1a1;
 
     &__common {
         background-color: $common;
-    }
-    &__uncommon {
-        background-color: $uncommon;
     }
     &__rare {
         background-color: $rare;
@@ -75,9 +71,6 @@ $legendary: #a1a1a1;
         &__common {
             color: $common;
         }
-        &__uncommon {
-            color: $uncommon;
-        }
         &__rare {
             color: $rare;
         }
@@ -103,11 +96,6 @@ $legendary: #a1a1a1;
         &__common {
             .react-sweet-progress-line-inner-status-active {
                 background-color: $common !important;
-            }
-        }
-        &__uncommon {
-            .react-sweet-progress-line-inner-status-active {
-                background-color: $uncommon !important;
             }
         }
         &__rare {

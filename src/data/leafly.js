@@ -30,7 +30,7 @@ export const LEAFLY = {
         {
             name: "Purple Punch",
             img_url: "https://images.leafly.com/flower-images/purple-punch-fixed.jpg",
-            rarity: "uncommon",
+            rarity: "rare",
             type: "Indica",
             thc_level: "19%",
             most_common_terpene: "Caryophyllene",
