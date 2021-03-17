@@ -13,7 +13,7 @@ export const CardFooter = ({ description, index }) => {
             </p>
             <div className="card-footer-number text-center text-muted p-2">
                 <FontAwesomeIcon className="me-1" icon={["fas", "cannabis"]} />
-                {index + 1}/25
+                {index + 1}/50
             </div>
         </div>
     );
