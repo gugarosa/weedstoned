@@ -1,5 +1,5 @@
 // Variables
-$bg-primary: rgb(50, 94, 60);
+$black: #000000;
 $white: #ffffff;
 
 $common: #dbdbdb;
@@ -8,6 +8,7 @@ $rare: #a1a1a1;
 $epic: #a1a1a1;
 $legendary: #a1a1a1;
 
+// Classes
 .card {
     display: flex;
     flex-direction: column;
@@ -77,15 +78,11 @@ $legendary: #a1a1a1;
     display: flex;
     justify-content: center;
     hr {
-        border: none;
-        height: 2px;
-        background-color: $common;
-        width: 75%;
+        background-color: rgba($black, 0.25);
+        width: 80%;
     }
 }
 
 .card-footer {
-    text-align: center;
-    padding: 0 2.5rem 0.5rem;
-    margin: 0;
+    border-top: none !important;
 }

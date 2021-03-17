@@ -14,9 +14,9 @@ export const Library = () => {
         <>
             <div className="container">
                 <div className="row justify-content-around p-4">
-                    {strains.map((strain) => (
-                        <div className="col-sm-auto" key={strain.name}>
-                            <Card data={strain} />
+                    {strains.map((strain, index) => (
+                        <div className="col-sm-auto" key={index}>
+                            <Card data={strain} index={index} />
                         </div>
                     ))}
                 </div>
