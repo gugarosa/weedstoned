@@ -1,9 +1,10 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Progress } from "react-sweet-progress";
 import "react-sweet-progress/lib/style.css";
 
+// CardBodyEffects
+// Wraps the card-body-effects component (middle-effects part of the card)
 export const CardBodyEffects = ({ effect, value, rarity, index }) => {
     if (index < 6) {
         const capitalizedEffect = effect

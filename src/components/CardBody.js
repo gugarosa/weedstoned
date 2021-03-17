@@ -3,6 +3,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CardBodyEffects } from "./CardBodyEffects";
 
+// CardBody
+// Wraps the card-body component (middle part of the card)
 export const CardBody = ({ name, terpene, effects, rarity }) => {
     return (
         <div className="card-body pb-0">
