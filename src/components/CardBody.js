@@ -21,13 +21,7 @@ export const CardBody = ({ name, terpene, effects, rarity }) => {
             <div className="card-body-effects">
                 {Object.entries(effects).map(([key, value], index) => {
                     return (
-                        <CardBodyEffects
-                            key={index}
-                            effect={key}
-                            value={value}
-                            rarity={rarity}
-                            index={index}
-                        />
+                        <CardBodyEffects key={index} effect={key} value={value} rarity={rarity} />
                     );
                 })}
             </div>

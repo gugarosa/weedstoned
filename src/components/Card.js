@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { CardBanner } from "./CardBanner";
 import { CardBody } from "./CardBody";
@@ -16,7 +16,9 @@ export const Card = ({ data, index }) => {
     const cardId = "card" + index;
 
     // Downloads an individual card to a SVG file
-    // downloadIndividualCard(cardId, data.name)
+    useEffect(() => {
+        // downloadIndividualCard(cardId, data.name)
+    });
 
     return (
         <div className="card" id={cardId}>
