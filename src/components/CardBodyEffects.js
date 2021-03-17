@@ -6,7 +6,7 @@ import "react-sweet-progress/lib/style.css";
 // CardBodyEffects
 // Wraps the card-body-effects component (middle-effects part of the card)
 export const CardBodyEffects = ({ effect, value, rarity, index }) => {
-    if (index < 6) {
+    if (index < 4) {
         const capitalizedEffect = effect
             .replace("_", " ")
             .replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
