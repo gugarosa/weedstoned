@@ -3,3 +3,13 @@
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap.scss";
+
+// ReactSweetProgress
+.react-sweet-progress-line-inner-status-active::before {
+    animation: none !important;
+}
+
+.react-sweet-progress-symbol {
+    font-size: 14px;
+    font-weight: 400;
+}
