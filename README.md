@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# WeedStoned: Programatically Create a Trading Card Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Welcome to WeedStoned.
 
-## Available Scripts
+An easy-to-use solution to your trading card game needs. Firstly, implemented along with the React.js framework, you can define everything. Lastly, you can also use our own. We offer both solutions and all the essential tools that you need in order to programatically construct a TCG-based application. Please, follow along the next sections in order to learn more about this excellent tool.
 
-In the project directory, you can run:
+WeedStoned is compatible with the latest: **React.js**.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Package guidelines
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. The very first information you need is in the very **next** section.
+2. **Installing** is also easy if you wish to read the code and bump yourself into, follow along.
+3. Note that there might be some **additional** steps in order to use our solutions.
+4. If there is a problem, please do not **hesitate**, call us.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting started: 60 seconds with WeedStoned
 
-### `npm run build`
+First of all. Code is all commented. Yes, they are commented. Just browse to any file, chose your subpackage, and follow it. We have high-level code for most tasks we could think of.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Alternatively, if you wish to learn even more, please take a minute:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+WeedStoned is based on the following structure, and you should pay attention to its tree:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+- vue-boilerplate
+    - public
+    - src
+        - assets
+        - components
+        - data
+        - utils
+        - views
+        - App.js
+        - App.scss
+        - Routes.js
+        - index.js
+```
 
-### `npm run eject`
+### Public
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This folder holds all the base public files that will be further generated and served. Only use if you need to change the favicon or configure any relevant header that must be present on HTML files.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Source
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Known as ```src```, this is where all the magic happens. Follow along the next items to understand what is happening here.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### assets
 
-## Learn More
+External assets should be created and used here. We will be using SCSS as your pre-processor for CSS files. You can also add here static images if needed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Every component should be placed here. An intelligent application uses a trade-off between when componentization should happen or not. For layout-related components, we assume this is a must.
 
-### Code Splitting
+#### data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+These are data objects that feeds the components. For example, you might want to change what use your own TCG instead of WeedStoned.
 
-### Analyzing the Bundle Size
+#### utils
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Utilities should be placed and loaded here. We encapsulate some common definitions so they can be used throughout the whole project.
 
-### Making a Progressive Web App
+#### views
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Views are the "face" of your application. Essentially, they are a bunch of components, assume a route and perform in a particular way inside the application.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Installation
 
-### Deployment
+We believe that everything has to be easy. Not tricky or daunting, WeedStoned will be the one-to-go package that you will need, from the very first installation to the daily-tasks implementing needs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Development
 
-### `npm run build` fails to minify
+First of all, make sure that you have a Node.js environment installed, allowing the access to ```npm```or ```yarn``` commands.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Next, install the needed requirements by performing the following commands:
+
+```
+npm install | yarn install
+```
+
+Finally, you can start the development service:
+
+```
+npm start | yarn start
+```
+
+All bootstrap commands were pre-loaded when this package was created. We have strictly followed the [Create React App](https://github.com/facebook/create-react-app).
+
+---
+
+## Environment configuration
+
+Note that sometimes, there is a need for additional implementation. If needed, from here you will be the one to know all of its details.
+
+### Ubuntu
+
+No specific additional commands needed.
+
+### Windows
+
+No specific additional commands needed.
+
+### MacOS
+
+No specific additional commands needed.
+
+---
+
+## Support
+
+We know that we do our best, but it is inevitable to acknowledge that we make mistakes. If you ever need to report a bug, report a problem, talk to us, please do so! We will be available at our bests at this repository or gustavo.rosa@unesp.br.
+
+---
