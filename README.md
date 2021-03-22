@@ -26,7 +26,7 @@ Alternatively, if you wish to learn even more, please take a minute:
 WeedStoned is based on the following structure, and you should pay attention to its tree:
 
 ```
-- vue-boilerplate
+- weedstoned
     - public
     - src
         - assets
